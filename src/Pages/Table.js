@@ -41,7 +41,7 @@ const Table = () => {
                   Available
                 </th>
                 <th scope="col" className="py-3 px-6">
-                  Price
+                  Price (Rp)
                 </th>
                 <th scope="col" className="py-3 px-6">
                   Action
