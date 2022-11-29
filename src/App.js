@@ -1,24 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
+import Form from './Pages/Form';
+import { Routes, Route } from 'react-router-dom';
+import Table from './Pages/Table';
+import Edit from './Pages/Edit';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes>
+      <Route path='/' element={<Table />}/>
+      <Route path='/form' element={<Form />}/>
+      <Route path='/edit/:id' element={<Edit />}/>
+    </Routes>
   );
 }
 
